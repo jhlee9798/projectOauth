@@ -1,0 +1,25 @@
+server:
+  port: 1234
+
+spring:
+  profiles:
+    include: oauth
+  jpa:
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  datasource:
+    url: jdbc:h2:mem:9a58a792-b72f-4ced-bfb8-9a6c78a76207
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 133491966229-8lnh2lubp1d7b9ljeasbdmal1rd80d29.apps.googleusercontent.com
+            client-secret: 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
+            scope: profile,email
+
+
+
