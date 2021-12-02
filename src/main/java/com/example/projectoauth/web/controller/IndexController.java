@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpSession;
 
@@ -29,6 +30,34 @@ public class IndexController {
 
         return "index";
     }
+
+
+    @GetMapping("/home")
+    public String home(Model model) {
+        model.addAttribute("posts", postService.findAllDesc());
+
+        SessionUser user = (SessionUser) httpSession.getAttribute("user");
+
+        if(user != null){
+            model.addAttribute("userName", user.getName());
+        }
+
+        return "home";
+    }
+
+    @GetMapping("/mypage")
+    public String mypage(Model model) {
+        model.addAttribute("posts", postService.findAllDesc());
+
+        SessionUser user = (SessionUser) httpSession.getAttribute("user");
+
+        if(user != null){
+            model.addAttribute("userName", user.getName());
+        }
+
+        return "mypage";
+    }
+
 
     @GetMapping("/posts/save")
     public String postsSave() {
