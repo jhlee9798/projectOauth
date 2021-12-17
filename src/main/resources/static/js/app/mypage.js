@@ -49,7 +49,7 @@ class Products{
         let products;
         $.ajax({
             type : 'GET',
-            url : '/products',
+            url : '/products/mypage',
             dataType : 'json',
             contentType : 'application/json; charset=utf-8',
             async:false
@@ -83,10 +83,12 @@ class UI{
                 <div class="img-container">
                     <img src=${product.image}
                     alt="product" class="product-img">
+<!--                    
                     <button class="bag-btn" data-id=${product.id}>
                         <i class="fas fa-shopping-cart"></i>
                         add to cart
                     </button>
+-->
 
                 </div>
                 <h3>${product.title}</h3>

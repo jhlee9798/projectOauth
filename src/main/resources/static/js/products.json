@@ -4,7 +4,7 @@
       "sys": { "id": "1" },
       "fields": {
         "title": "queen bed",
-        "price": 500.99,
+        "price": 500.34,
         "image": { "fields": { "file": { "url": "./images/product-1.jpeg" } } }
       }
     },
@@ -12,7 +12,7 @@
       "sys": { "id": "2" },
       "fields": {
         "title": "keyboard",
-        "price": 80.99,
+        "price": 80.49,
         "image": { "fields": { "file": { "url": "./images/product-2.jpg" } } }
       }
     },
@@ -20,48 +20,48 @@
       "sys": { "id": "3" },
       "fields": {
         "title": "noteBook",
-        "price": 1247.99,
+        "price": 1247.75,
         "image": { "fields": { "file": { "url": "./images/product-3.jpg" } } }
       }
     },
     {
       "sys": { "id": "4" },
       "fields": {
-        "title": "twin panel bed",
-        "price": 22.99,
-        "image": { "fields": { "file": { "url": "./images/product-4.jpeg" } } }
+        "title": "television",
+        "price": 1500.33,
+        "image": { "fields": { "file": { "url": "./images/product-4.jpg" } } }
       }
     },
     {
       "sys": { "id": "5" },
       "fields": {
-        "title": "fridge",
-        "price": 88.99,
+        "title": "hood T-shirt",
+        "price": 88.11,
         "image": { "fields": { "file": { "url": "./images/product-5.jpeg" } } }
       }
     },
     {
       "sys": { "id": "6" },
       "fields": {
-        "title": "dresser",
-        "price": 32.99,
-        "image": { "fields": { "file": { "url": "./images/product-6.jpeg" } } }
+        "title": "shoes",
+        "price": 132.45,
+        "image": { "fields": { "file": { "url": "./images/product-6.jpg" } } }
       }
     },
     {
       "sys": { "id": "7" },
       "fields": {
-        "title": "couch",
-        "price": 45.99,
-        "image": { "fields": { "file": { "url": "./images/product-7.jpeg" } } }
+        "title": "Ramen",
+        "price": 5.99,
+        "image": { "fields": { "file": { "url": "./images/product-7.jpg" } } }
       }
     },
     {
       "sys": { "id": "8" },
       "fields": {
-        "title": "table",
+        "title": "flashlight",
         "price": 33.99,
-        "image": { "fields": { "file": { "url": "./images/product-8.jpeg" } } }
+        "image": { "fields": { "file": { "url": "./images/product-8.jpg" } } }
       }
     }
   ]

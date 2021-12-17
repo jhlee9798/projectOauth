@@ -21,10 +21,13 @@ public class Product extends BaseTimeEntity {
 
     private String image;
 
+    private String email;
 
-    public Product(String title, String price, String image) {
+
+    public Product(String title, String price, String image, String email) {
         this.title = title;
         this.price = price;
         this.image = image;
+        this.email = email;
     }
 }

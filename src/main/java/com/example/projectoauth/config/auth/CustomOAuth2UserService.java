@@ -20,6 +20,7 @@ import java.util.Collections;
 @RequiredArgsConstructor
 @Service
 public class CustomOAuth2UserService implements OAuth2UserService<OAuth2UserRequest, OAuth2User> {
+    public static String StaticUserEmail;
     private final UserRepository userRepository;
     private final HttpSession httpSession;
 
@@ -49,6 +50,7 @@ public class CustomOAuth2UserService implements OAuth2UserService<OAuth2UserRequ
                 .map(entity -> entity.update(attributes.getName(),attributes.getPicture()))
                 .orElse(attributes.toEntity());
 
+        StaticUserEmail = user.getEmail();
         return userRepository.save(user);
     }
 }
